@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oscar.UA — дивитися фільми онлайн</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-inner">
+        <div class="site-logo" onclick="window.location.hash='/'">
+          <span class="logo-icon">🏆</span>
+          <span class="logo-text">Oscar<strong>.UA</strong></span>
+        </div>
+
+        <div class="header-search">
+          <input type="text" id="search-input" placeholder="Пошук фільмів..." autocomplete="off">
+          <button id="search-btn">🔍</button>
+          <div id="search-dropdown" class="search-dropdown hidden"></div>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn-login">Увійти</button>
+          <button class="btn-register">Реєстрація</button>
+        </div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <div class="header-inner">
+        <ul class="nav-list">
+          <li><a class="nav-link" data-path="/" href="#/">Головна</a></li>
+          <li class="nav-has-dropdown">
+            <a class="nav-link" data-path="/genres" href="#/genres">Жанри ▾</a>
+            <div class="nav-dropdown" id="genres-dropdown"></div>
+          </li>
+          <li><a class="nav-link" data-path="/top100" href="#/top100">Топ 100</a></li>
+          <li><a class="nav-link" data-path="/new" href="#/new">Новинки</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="breadcrumbs-bar">
+    <div class="header-inner">
+      <nav id="breadcrumbs" class="breadcrumbs"></nav>
+    </div>
+  </div>
+  <main id="main-content"></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="site-logo" style="margin-bottom:12px">
+          <span class="logo-icon">🏆</span>
+          <span class="logo-text">Oscar<strong>.UA</strong></span>
+        </div>
+        <p>Дивіться найкращі фільми онлайн безкоштовно та без реєстрації.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навігація</h4>
+        <ul>
+          <li><a href="#/">Головна</a></li>
+          <li><a href="#/genres">Жанри</a></li>
+          <li><a href="#/top100">Топ 100</a></li>
+          <li><a href="#/new">Новинки</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Жанри</h4>
+        <ul id="footer-genres"></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакти</h4>
+        <ul>
+          <li>📧 info@oscar.ua</li>
+          <li>Telegram: @oscarua</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Oscar.UA — всі права захищено. Сайт створено в освітніх цілях.</p>
+    </div>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
